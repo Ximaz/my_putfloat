@@ -11,8 +11,6 @@ void my_putfloat(float nb, int precision)
     my_putchar('.');
     for (; i < precision; i++)
         nb *= 10;
-    for (; i > 0; i--) {
+    for (; i > 0; i--, nb /= 10)
         my_put_nbr((int) nb % 10);
-        nb /= 10;
-    }
 }
