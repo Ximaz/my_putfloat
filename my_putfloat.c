@@ -1,13 +1,6 @@
 extern void my_putchar(char c);
 extern int my_put_nbr(int nb);
 
-static float trim_nbr(float nb)
-{
-    while (nb > 0 && nb >= 1)
-        nb--;
-    return nb;
-}
-
 void my_putfloat(float nb, int precision)
 {
     int i = 0;
